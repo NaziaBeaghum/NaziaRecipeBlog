@@ -1,0 +1,60 @@
+.welcome_note
+{
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+}
+.nav
+{
+  
+}
+.icon
+{
+display: block;
+  margin: 0 auto;
+  width: 5%;
+}
+.home_container
+{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(10,1fr);
+row-gap: 60px;
+column-gap: 20px;
+width:80%;
+margin: 0 auto;
+}
+
+
+
+@media(max-width:900px){
+  .home_container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10,2fr);
+    row-gap:40px ;
+    column-gap: 10px;
+    width: 90%;
+    
+    
+  }
+}
+@media(max-width:440px){
+  .home_container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(15,2fr);
+    row-gap:30px ;
+    column-gap: 10px;
+    width: 90%;
+    
+  }}
+
+  @media(max-width:320px){
+    .home_container{
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(30,1fr);
+      
+      width: 90%;
+      
+    }
+  }
